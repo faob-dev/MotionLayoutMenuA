@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    //transition to collapsed state with menu 1 at top
+    <Transition
+            app:constraintSetStart="@id/s1"
+            app:constraintSetEnd="@id/s2"
+            app:interpolator="easeOut"
+            app:duration="700">
+        <KeyFrameSet>
+            <KeyAttribute
+                    app:framePosition="95"
+                    android:alpha="0.0"
+                    app:target="@id/ic1" />
+        </KeyFrameSet>
+    </Transition>
+    //transition back to expanded state
+    <Transition
+            app:constraintSetStart="@id/s2"
+            app:constraintSetEnd="@id/s1"
+            app:duration="700">
+        <KeyFrameSet>
+            <KeyAttribute
+                    app:framePosition="5"
+                    android:alpha="0.0"
+                    app:target="@id/ic1" />
+        </KeyFrameSet>
+    </Transition>
+
+    //transition to collapsed state with menu 2 at top
+    <Transition
+            app:constraintSetStart="@id/s1"
+            app:constraintSetEnd="@id/s3"
+            app:duration="700">
+        <KeyFrameSet>
+            <KeyAttribute
+                    app:framePosition="95"
+                    android:alpha="0.0"
+                    app:target="@id/ic1" />
+        </KeyFrameSet>
+    </Transition>
+    //transition back to expanded state
+    <Transition
+            app:constraintSetStart="@id/s3"
+            app:constraintSetEnd="@id/s1"
+            app:duration="700">
+        <KeyFrameSet>
+            <KeyAttribute
+                    app:framePosition="5"
+                    android:alpha="0.0"
+                    app:target="@id/ic1" />
+        </KeyFrameSet>
+    </Transition>
+
+    //transition to collapsed state with menu 3 at top
+    <Transition
+            app:constraintSetStart="@id/s1"
+            app:constraintSetEnd="@id/s4"
+            app:duration="700">
+        <KeyFrameSet>
+            <KeyAttribute
+                    app:framePosition="95"
+                    android:alpha="0.0"
+                    app:target="@id/ic1" />
+        </KeyFrameSet>
+    </Transition>
+    //transition back to expanded state
+    <Transition
+            app:constraintSetStart="@id/s4"
+            app:constraintSetEnd="@id/s1"
+            app:duration="700">
+        <KeyFrameSet>
+            <KeyAttribute
+                    app:framePosition="5"
+                    android:alpha="0.0"
+                    app:target="@id/ic1" />
+        </KeyFrameSet>
+    </Transition>
+
+    //transition to collapsed state with menu 4 at top
+    <Transition
+            app:constraintSetStart="@id/s1"
+            app:constraintSetEnd="@id/s5"
+            app:duration="700">
+        <KeyFrameSet>
+            <KeyAttribute
+                    app:framePosition="95"
+                    android:alpha="0.0"
+                    app:target="@id/ic1" />
+        </KeyFrameSet>
+    </Transition>
+    //transition back to expanded state
+    <Transition
+            app:constraintSetStart="@id/s5"
+            app:constraintSetEnd="@id/s1"
+            app:duration="700">
+        <KeyFrameSet>
+            <KeyAttribute
+                    app:framePosition="5"
+                    android:alpha="0.0"
+                    app:target="@id/ic1" />
+        </KeyFrameSet>
+    </Transition>
+
+    //expanded state
+    <ConstraintSet android:id="@+id/s1">
+        <Constraint android:id="@id/v1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_expanded_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/v1_expanded_margin_top">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="15dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_expanded_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/v2_expanded_margin_top">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="14dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_expanded_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/v3_expanded_margin_top">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="13dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_expanded_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/v4_expanded_margin_top">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="12dp"/>
+        </Constraint>
+
+        <Constraint android:id="@id/c1"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c2"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#FFFCF4BD"/>
+        </Constraint>
+        <Constraint android:id="@id/c2"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toEndOf="@+id/c1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#FFFCF4BD"/>
+        </Constraint>
+        <Constraint android:id="@id/c3"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c4"
+                    app:layout_constraintTop_toBottomOf="@+id/c1">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#FFFCF4BD"/>
+        </Constraint>
+        <Constraint android:id="@id/c4"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toEndOf="@+id/c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/c2">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#FFFCF4BD"/>
+        </Constraint>
+
+        <Constraint
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                android:id="@id/ic1"
+                android:tint="#ffffffff"
+                android:elevation="24dp"
+                android:rotation="90"
+                android:alpha="0"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/v1"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="56dp" app:layout_constraintTop_toTopOf="@+id/v1">
+
+        </Constraint>
+    </ConstraintSet>
+
+    //collapsed state with menu 1 at top and change content views color to menu 1 color
+    <ConstraintSet android:id="@+id/s2">
+        <Constraint android:id="@id/v1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="15dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+
+        <Constraint android:id="@id/c1"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c2"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#f1d2fd"/>
+        </Constraint>
+        <Constraint android:id="@id/c2"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toEndOf="@+id/c1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#f1d2fd"/>
+        </Constraint>
+        <Constraint android:id="@id/c3"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c4"
+                    app:layout_constraintTop_toBottomOf="@+id/c1">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#f1d2fd"/>
+        </Constraint>
+        <Constraint android:id="@id/c4"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toEndOf="@+id/c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/c2">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#f1d2fd"/>
+        </Constraint>
+
+        <Constraint
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@id/ic1"
+                android:tint="#ffffffff"
+                android:elevation="24dp"
+                android:rotation="90"
+                android:alpha="1"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/v1"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="56dp" app:layout_constraintTop_toTopOf="@+id/v1"/>
+    </ConstraintSet>
+
+    //collapsed state with menu 2 at top and change content views color to menu 2 color
+    <ConstraintSet android:id="@+id/s3">
+        <Constraint android:id="@id/v1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="15dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+
+        <Constraint android:id="@id/c1"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c2"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#ffd7d4"/>
+        </Constraint>
+        <Constraint android:id="@id/c2"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toEndOf="@+id/c1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#ffd7d4"/>
+        </Constraint>
+        <Constraint android:id="@id/c3"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c4"
+                    app:layout_constraintTop_toBottomOf="@+id/c1">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#ffd7d4"/>
+        </Constraint>
+        <Constraint android:id="@id/c4"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toEndOf="@+id/c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/c2">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#ffd7d4"/>
+        </Constraint>
+
+        <Constraint
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@id/ic1"
+                android:tint="#ffffffff"
+                android:elevation="24dp"
+                android:rotation="90"
+                android:alpha="1"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/v1"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="56dp" app:layout_constraintTop_toTopOf="@+id/v1"/>
+    </ConstraintSet>
+
+    //collapsed state with menu 3 at top and change content views color to menu 3 color
+    <ConstraintSet android:id="@+id/s4">
+        <Constraint android:id="@id/v1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="15dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+
+        <Constraint android:id="@id/c1"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c2"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#bfc9a7"/>
+        </Constraint>
+        <Constraint android:id="@id/c2"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toEndOf="@+id/c1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#bfc9a7"/>
+        </Constraint>
+        <Constraint android:id="@id/c3"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c4"
+                    app:layout_constraintTop_toBottomOf="@+id/c1">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#bfc9a7"/>
+        </Constraint>
+        <Constraint android:id="@id/c4"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toEndOf="@+id/c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/c2">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#bfc9a7"/>
+        </Constraint>
+
+        <Constraint
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@id/ic1"
+                android:tint="#ffffffff"
+                android:elevation="24dp"
+                android:rotation="90"
+                android:alpha="1"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/v1"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="56dp" app:layout_constraintTop_toTopOf="@+id/v1"/>
+    </ConstraintSet>
+
+    //collapsed state with menu 4 at top and change content views color to menu 4 color
+    <ConstraintSet android:id="@+id/s5">
+        <Constraint android:id="@id/v1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="0dp"/>
+        </Constraint>
+        <Constraint android:id="@id/v4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_collapsed_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp">
+            <CustomAttribute
+                    app:attributeName="cardElevation"
+                    app:customDimension="15dp"/>
+        </Constraint>
+
+        <Constraint android:id="@id/c1"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c2"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#d0eeff"/>
+        </Constraint>
+        <Constraint android:id="@id/c2"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="104dp"
+                    app:layout_constraintStart_toEndOf="@+id/c1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#d0eeff"/>
+        </Constraint>
+        <Constraint android:id="@id/c3"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/c4"
+                    app:layout_constraintTop_toBottomOf="@+id/c1">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#d0eeff"/>
+        </Constraint>
+        <Constraint android:id="@id/c4"
+                    android:layout_width="130dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toEndOf="@+id/c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/c2">
+            <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#d0eeff"/>
+        </Constraint>
+
+        <Constraint
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@id/ic1"
+                android:tint="#ffffffff"
+                android:elevation="24dp"
+                android:rotation="90"
+                android:alpha="1"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/v1"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="56dp" app:layout_constraintTop_toTopOf="@+id/v1"/>
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_expanded_height">154dp</dimen>
+    <dimen name="menu_collapsed_height">80dp</dimen>
+
+    <dimen name="v1_expanded_margin_top">0dp</dimen>
+    <dimen name="v2_expanded_margin_top">154dp</dimen>
+    <dimen name="v3_expanded_margin_top">308dp</dimen>
+    <dimen name="v4_expanded_margin_top">462dp</dimen>
+</resources>
