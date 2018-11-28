@@ -6,7 +6,7 @@ Dribble menu design https://dribbble.com/shots/2653519-Menu built with Android M
 
 ## Description
 
-TODO
+Views with IDs <b>v1, v2, v3, v4</b> are four menus <b>c1, c2, c3, c4</b> are four background content views and view with ID <b>ic1</b> is down arrow image. 
 
 ## Buy me a coffee ☕
 
