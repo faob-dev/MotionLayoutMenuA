@@ -22,9 +22,3 @@ Change top margins of each menu according to your screen height to place menus o
 <b>v4_expanded_margin_top</b></br>
 
 MotionScene file in <b>xml/motion_scene.xml</b> contains comments about each Transition and ConstraintSet. MenuActicity only handles click events and run transitions defined in motion_scene file.
-
-
-
-## Buy me a coffee ☕
-
-<a href="https://www.buymeacoffee.com/OVQoKHw7q" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
