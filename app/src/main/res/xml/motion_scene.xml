@@ -7,25 +7,26 @@
     <Transition
             app:constraintSetStart="@id/s1"
             app:constraintSetEnd="@id/s2"
-            app:interpolator="easeOut"
+            app:motionInterpolator="easeOut"
             app:duration="700">
         <KeyFrameSet>
             <KeyAttribute
                     app:framePosition="95"
                     android:alpha="0.0"
-                    app:target="@id/ic1" />
+                    app:motionTarget="@id/ic1" />
         </KeyFrameSet>
     </Transition>
     //transition back to expanded state
     <Transition
             app:constraintSetStart="@id/s2"
             app:constraintSetEnd="@id/s1"
+            app:motionInterpolator="easeOut"
             app:duration="700">
         <KeyFrameSet>
             <KeyAttribute
                     app:framePosition="5"
                     android:alpha="0.0"
-                    app:target="@id/ic1" />
+                    app:motionTarget="@id/ic1" />
         </KeyFrameSet>
     </Transition>
 
@@ -33,24 +34,26 @@
     <Transition
             app:constraintSetStart="@id/s1"
             app:constraintSetEnd="@id/s3"
+            app:motionInterpolator="easeOut"
             app:duration="700">
         <KeyFrameSet>
             <KeyAttribute
                     app:framePosition="95"
                     android:alpha="0.0"
-                    app:target="@id/ic1" />
+                    app:motionTarget="@id/ic1" />
         </KeyFrameSet>
     </Transition>
     //transition back to expanded state
     <Transition
             app:constraintSetStart="@id/s3"
             app:constraintSetEnd="@id/s1"
+            app:motionInterpolator="easeOut"
             app:duration="700">
         <KeyFrameSet>
             <KeyAttribute
                     app:framePosition="5"
                     android:alpha="0.0"
-                    app:target="@id/ic1" />
+                    app:motionTarget="@id/ic1" />
         </KeyFrameSet>
     </Transition>
 
@@ -63,7 +66,7 @@
             <KeyAttribute
                     app:framePosition="95"
                     android:alpha="0.0"
-                    app:target="@id/ic1" />
+                    app:motionTarget="@id/ic1" />
         </KeyFrameSet>
     </Transition>
     //transition back to expanded state
@@ -75,7 +78,7 @@
             <KeyAttribute
                     app:framePosition="5"
                     android:alpha="0.0"
-                    app:target="@id/ic1" />
+                    app:motionTarget="@id/ic1" />
         </KeyFrameSet>
     </Transition>
 
@@ -88,7 +91,7 @@
             <KeyAttribute
                     app:framePosition="95"
                     android:alpha="0.0"
-                    app:target="@id/ic1" />
+                    app:motionTarget="@id/ic1" />
         </KeyFrameSet>
     </Transition>
     //transition back to expanded state
@@ -100,7 +103,7 @@
             <KeyAttribute
                     app:framePosition="5"
                     android:alpha="0.0"
-                    app:target="@id/ic1" />
+                    app:motionTarget="@id/ic1" />
         </KeyFrameSet>
     </Transition>
 
